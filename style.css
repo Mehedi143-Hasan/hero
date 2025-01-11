@@ -1,0 +1,198 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* At First .hero class create*/
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 100px ;
+    overflow: hidden;
+}
+/* navigation menu bar creating */
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo image size*/
+
+.logo {width: 80px;}
+
+/* list icon none and margin padding */
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    padding: 10px;
+}
+/* a tag decoration*/
+
+nav>ul>li>a {
+    text-decoration: none;
+    color:  #e9078b;
+    font-weight: 400;
+    font-size: 25px;
+}
+/* login bar decoration*/
+.login {
+    text-decoration: none;
+    padding: 10px 15px;
+    color:  #e9078b;
+    font-size: 25px;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;  
+}
+
+.content h1 {
+    font-size: 70px;
+    color:  #f0317a;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    color: #410386;
+    animation-delay: 0.5s;
+}
+
+.content a {
+    text-decoration: none;
+    color: #e9078b;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+    background-color: aqua;
+    
+}
+
+.my_photo {
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.animation {
+    opacity:0;
+    transform: translateY(30px);
+    animation: mehedi 0.5s linear forwards ;
+}
+@keyframes mehedi {
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+.hero-container {
+    position: relative;
+    color: white;
+
+}
+.hero-image {
+    background-image: url(./images/DSC_0245.JPG);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: block;
+
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    color: white;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    transition: all 400ms ease-in-out;
+}
+.nav-child {
+    display: flex ;
+    align-items: center;
+}
+.nav-child h3, .nav-child a {
+    margin: 2rem;
+}
+.nav-child a { text-decoration: none;
+    color: white;
+
+}
+
+.nav-child i {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+@media (min-width:767px) {
+    
+    .nav-child i { display: none;}
+} */
+
