@@ -1,0 +1,124 @@
+* {margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black; 
+    overflow: hidden;
+    /* background-image: url(./images/sky1\ \(1\).jpg);
+    background-size: cover ; */
+}
+.container {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position:relative;
+    
+}
+
+.sun {
+    position: absolute;
+    top: 13em;
+    left: 13em;
+    width: 15em;
+    height: 15em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 10em rgb(177, 196, 139);
+} 
+
+.earth, .moon {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent ;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: mehedi 30.5s linear infinite;
+}
+
+.moon {
+    top:  0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: mehedi 5s linear infinite;
+}
+
+.earth::before,
+.moon::before {
+    content:'' ;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.earth::before {
+    top: 2.8em ;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background: rgb(7, 192, 216);
+}
+
+.moon::before {
+    top: .8em ;
+    right: .2em;
+    width: 1.2em;
+    height: 1.2em;
+    background:silver;
+}
+
+@keyframes mehedi {
+    to {transform: rotate(360deg);
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*     
+    width: 300px;
+    height: 300px;
+    background-image: url(./images/earth_1.jpg);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50,-50%);
+    background-size: 700px 100%;
+    background-position: 0px 0px;
+    box-shadow: inset 0px 0px 10px #fff,inset 30px 0px 50px #0e0d0d;
+    animation: rotate 10s infinite linear ; 
+}
+
+@keyframes rotate {
+    0% { background-position: 0px;}
+
+100% {
+    background-position: 100px;
+}
+}
+ */

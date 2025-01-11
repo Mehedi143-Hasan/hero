@@ -1,0 +1,57 @@
+* {margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/night_star_sky.jpg);
+    background-size: cover;
+}
+.earth {
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/earth_1.jpg);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50% );
+    background-size: 700px 100%;
+    box-shadow: inset 0px 0px 10px white, inset 10px 0px 30px black ;
+    animation: mehedi 10s linear infinite  ;
+}
+
+@keyframes mehedi {
+    to { background-position: 0px;}
+    from { background-position:1000px;}  
+    
+}
+
+.orbit {
+    width:400px;
+    height: 500px;
+    border: 1px solid white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: mehedi_2 20s infinite linear;
+}
+@keyframes mehedi_2{
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.moon {
+    width: 100px;
+    height: 100px;
+    background: url(../images/moon.jpg);
+    background-size: 220px;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    box-shadow: inset 0px 0px 8px white, inset 10px 0px 10px black 
+}
