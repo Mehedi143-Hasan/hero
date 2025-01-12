@@ -27,5 +27,6 @@ TODO:
 - contact page creating 
 - responsive design 
 - other pages add 
+- final task 
 
 
