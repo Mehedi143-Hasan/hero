@@ -5,3 +5,4 @@
 # login page 
 # animation 
 # responsive design for mobile 
+# my img is so big 
