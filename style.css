@@ -2,19 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-/* At First .hero class create*/
+
 .hero {
     width: 100%;
     min-height: 100vh;
     background-image: url(./images/background.jpg);
     background-position: center;
     background-size: cover;
-    padding: 10px 100px ;
+    padding: 10px 10% ;
     overflow: hidden;
     position: relative;
 }
-/* navigation menu bar creating */
+
+
 nav {
     padding: 10px 0;
     display: flex;
@@ -22,43 +24,45 @@ nav {
     justify-content: space-between;
 }
 
-/* logo image size*/
 
-.logo {width: 80px;}
 
-/* list icon none and margin padding */
+.logo {width: 140px;}
+
+
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 10px;
-    padding: 10px;
+    margin: 10px 15px;
+    /* padding: 10px 10px; */
 }
-/* a tag decoration*/
+
 
 nav ul li a {
     text-decoration: none;
     color:  #e9078b;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 10px 20px;  /*my use */
+    margin: 10px;  /*my use */
 }
-/* login bar decoration*/
+
 .btn {
     display: inline-block;
     text-decoration: none;
-    padding: 10px 15px;
-    color: #a618df;
-    background-color: rgb(42, 248, 93);
-    font-size: 20px;
+    padding: 20px 40px;
+    color: #f4f2f5;
+    background-image:linear-gradient(45deg, #df4881, #3430d7);
+    font-size: 25px;
     border-radius: 30px;
-    margin: 10px;
     border-top-right-radius: 0;
-    font-weight: bold;
     transition: 0.5s;
 }
 
-/*in this around content and h1 p */
 .content {
     margin-top: 10%;
-    max-width: 600px;  }
+    max-width: 600px;  
+}
+
 
 .content h1 {
     font-size: 70px;
@@ -70,25 +74,36 @@ nav ul li a {
     margin: 10px 0 30px;
     color: #410386;
     text-shadow: 10px 10px 10px;
-    animation-delay: 0.8s;}
+    animation-delay: 0.8s;
+}
 
-.btn.animation {
+.content .btn {
     padding: 15px 80px;
-    font-size: 25px;
-    animation-delay: .9s;
+    font-size: 16px;
+    animation-delay: 1.1s;
 }
 
 .btn:hover {
-    border-top-right-radius: 30px;}
-    
+    border-top-right-radius: 30px;
+}
+
+
+.content .login_animation {
+    padding: 15px 80px;
+    font-size: 15px;
+    animation-delay: 1s;
+}
+
+/*আমার ইমেজ*/
 .img {
-    width: 530px;
+    width: 700px;
     position: absolute;
     bottom: 0;
     right: 10%;
 }
+
 .img.animation {
-    animation-delay: 1.5s;
+    animation-delay: 1.6s;
 }
 
 /*animation*/
@@ -112,14 +127,15 @@ ul li:hover .dropdown {
     display: block;
     position: absolute;
     background-color: rgb(243, 195, 243);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-top: 10px;
     text-align: center;
+
 }
 
 .dropdown a {
-    margin: 10px;
-    padding: 10px;
+    margin: 20px 20px ;
+    padding: 20px 20px ;
 }
 .dropdown ul li {
     display: block;
@@ -137,6 +153,9 @@ ul li:hover .dropdown {
 a:hover {
     background-color: yellow;
     padding: 10px 30px;
+    text-align: center;
+    text-size-adjust: 10px;
+    /* border-radius: 50%; */
     /* padding: 10px 35px;
     margin: 0 10px;
     font-size: 20px; */
@@ -145,24 +164,23 @@ a:hover {
 /* other animation */
 
 .active {
-    width: 100px;
-    height: 100px;
-    background-color: rgba(12, 243, 4, 0.4);
-    font-weight: bold;
-    position: relative;
-    animation: move 5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-
+    background: linear-gradient(90deg,rgb(221, 245, 5),rgb(3, 250, 114));
+    animation: bg 3s linear infinite;
+    padding: 10px 20px;
 }
 
-@keyframes move {
-    from {left: 0px;}
-    to {left: 20px;}
+@keyframes bg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 
-
+/* @media screen and (min-width: 600px) {
+    .active {
+    background-color: yellow;
+    }
+} */
 
 
 

@@ -1,0 +1,49 @@
+/*iphone 14 pro Max and samsung galaxy s20 Ultra and 
+ samsung galaxy A51/71 etc  */
+@media screen and (max-width: 430px) {
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 15px auto;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color:  #e9078b;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .img {
+        width: 180px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+    }
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #f4f2f5;
+        background-image:linear-gradient(45deg, #df4881, #3430d7);
+        font-size: 20px;
+        border-top-right-radius: 0;
+        margin: -10px;
+        transition: 0.5s;
+        
+    }
+
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(./images/background.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 10px 10% ;
+        margin:;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo {width: 100px;}
+    
+
+}

@@ -25,4 +25,7 @@ TODO:
 - creating animation as like as hover 
 - Next login page creating 
 - contact page creating 
+- responsive design 
+- other pages add 
+
 

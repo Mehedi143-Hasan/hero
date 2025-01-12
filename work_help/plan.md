@@ -4,3 +4,4 @@
 # image and cover photo and logo add
 # login page 
 # animation 
+# responsive design for mobile 
